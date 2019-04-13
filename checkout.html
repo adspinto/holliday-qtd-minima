@@ -1,0 +1,2789 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>Carrinho - Holiday Store | Moda Masculina e Feminina direto da fábrica</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"38a1412bef","agent":"","transactionName":"YFZRYBZRWxBSWkJeW1kcdUEKU0EKXFcZW11VQB1BEFlZEAlXU0A=","applicationID":"141234338","errorBeacon":"bam.nr-data.net","applicationTime":539}</script>
+    <meta name="generator" content="Loja Integrada" />
+
+    
+      <meta property="og:url" content="https://www.hollidaystore.com/carrinho/index" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Holliday Store" />
+      <meta property="og:locale" content="pt_BR" />
+    
+
+    
+
+  <meta property="og:title" content="Holliday Store" />
+  
+    <meta property="og:image" content="https://cdn.awsli.com.br/399/399180/logo/5b35350519.png" />
+  
+
+
+
+
+
+
+
+
+  <meta name="robots" content="index, follow" />
+
+
+
+  <link rel="stylesheet" href="http://localhost/holliday-qtd-minima/qtd-minima.css" type="text/css">
+      
+        <link rel="shortcut icon" href="https://cdn.awsli.com.br/399/399180/favicon/4f90270198.png" />
+      
+      <link rel="icon" href="https://cdn.awsli.com.br/399/399180/favicon/4f90270198.png" sizes="192x192">
+    
+    <meta name="theme-color" content="">
+
+    
+      <link rel="stylesheet" href="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/css/all.min.css?v=42d9a85" type="text/css">
+    
+    <!--[if lte IE 8]><link rel="stylesheet" href="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/css/ie-fix.min.css" type="text/css"><![endif]-->
+    <!--[if lte IE 9]><style type="text/css">.lateral-fulbanner { position: relative; }</style><![endif]-->
+
+    
+      
+    
+
+    
+
+    
+      <link href='//fonts.googleapis.com/css?family=Open%20Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    
+
+    
+      <link rel="stylesheet" href="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/css/bootstrap-responsive.css?v=42d9a85" type="text/css">
+      <link rel="stylesheet" href="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/css/style-responsive.css?v=42d9a85">
+    
+
+    
+      <link rel="stylesheet" href="/tema.css?v=20190227-182332">
+    
+
+    <script type="text/javascript">
+      var LOJA_ID = 399180;
+      var MEDIA_URL = "https://cdn.awsli.com.br/";
+      var CARRINHO_PRODS = [34107310];
+      var ENVIO_ESCOLHIDO =  0 ;
+      var CONTRATO_INTERNACIONAL = false;
+      var CONTRATO_BRAZIL = !CONTRATO_INTERNACIONAL
+    </script>
+
+    
+      <script src="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/js/all.min.js?v=42d9a85"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://cdn.awsli.com.br/production/static/css/jquery.fancybox.min.css" type="text/css" />
+    <script src="https://cdn.awsli.com.br/production/static/js/jquery/jquery.fancybox.pack.min.js"></script>
+
+    
+
+<script type="text/javascript">
+var owa_baseUrl = 'https://analytics.awsli.com.br/';
+var owa_cmds = owa_cmds || [];
+owa_cmds.push(['setSiteId', 'loja-399180']);
+owa_cmds.push(['trackPageView']);
+(function() {
+  var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+  _owa.src = 'https://cdn.awsli.com.br/production/static/analytics/owa.min.js?v=42d9a85';
+  var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+}());
+</script>
+
+    
+    
+  <script type="text/javascript" src="https://cdn.awsli.com.br/production/static/loja/estrutura/v1/js/carrinho.min.js?v=42d9a85"></script>
+  <script type="text/javascript">
+    var URL_CALCULO_FRETE = "https://www.hollidaystore.com/carrinho/endereco/adicionar";
+  </script>
+
+
+    
+      
+	<!-- loading-react-js-andre -->
+  
+    <!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  
+
+	<!-- push-fa-andre -->
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></link>
+  
+
+      
+        
+          <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46274885-2', document.domain.replace(/^(www|store|loja)\./,''));
+  ga('require', 'displayfeatures');
+  
+  
+  
+    
+      ga('set', 'ecomm_prodid', '0000000018555');
+      ga('set', 'ecomm_pagetype', 'cart');
+      ga('set', 'ecomm_totalvalue', '756.2');
+    
+  
+  
+  ga('send', 'pageview');
+</script>
+
+        
+          
+        
+          <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '577046439435960');
+fbq('track', "PageView");
+
+
+
+  
+    fbq('track', 'AddToCart', {
+      content_ids: ['0000000018555'],
+      content_type: 'product',
+      value: 756.2,
+      currency: 'BRL',
+    });
+  
+
+
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=577046439435960&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+        
+      
+
+      
+        <link href="//cdn.awsli.com.br/temasv2/244/__theme_custom.css?v=1549300932" rel="stylesheet" type="text/css">
+<script src="//cdn.awsli.com.br/temasv2/244/__theme_custom.js?v=1549300932"></script>
+      
+
+      
+        <link rel="stylesheet" href="/avancado.css?v=20190227-182332" type="text/css" />
+      
+    
+
+  </head>
+  <body class="pagina-carrinho   " data-spy="scroll" data-target=".navegacao" ontouchstart="">
+    <div id="fb-root"></div>
+
+    
+      
+    
+
+    <div class="conteiner-principal">
+      
+        
+          
+<div id="cabecalho">
+
+  <div class="atalhos-mobile visible-phone fundo-secundario borda-principal">
+    <ul>
+
+      <li><a href="https://www.hollidaystore.com/" class="icon-home"> </a></li>
+      
+      <li class="fundo-principal"><a href="https://www.hollidaystore.com/carrinho/index" class="icon-shopping-cart"> </a></li>
+      
+      
+      <li><a href="https://www.hollidaystore.com/conta/logout" class="icon-signout"> </a></li>
+      
+      
+      <li><a href="https://www.hollidaystore.com/conta/index" class="icon-user"> </a></li>
+      
+      <li class="vazia"><span>&nbsp;</span></li>
+
+    </ul>
+  </div>
+
+  <div class="conteiner">
+    <div class="row-fluid">
+      <div class="span3">
+        <h2 class="logo cor-secundaria">
+          <a href="https://www.hollidaystore.com/" title="Holliday Store">
+            
+              <img src="https://cdn.awsli.com.br/400x300/399/399180/logo/5b35350519.png" alt="Holliday Store" />
+            
+          </a>
+        </h2>
+
+
+      </div>
+
+      <div class="conteudo-topo span9">
+        
+          <div class="superior row-fluid hidden-phone">
+            <div class="span8">
+              
+                <div class="btn-group">
+                  <a href="https://www.hollidaystore.com/conta/login" class="botao secundario pequeno dropdown-toggle" data-toggle="dropdown">
+                    Olá, Andre Pinto
+                    <span class="icon-chevron-down"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="https://www.hollidaystore.com/conta/login" title="Minha conta">Minha conta</a>
+                    </li>
+                    
+                      <li>
+                        <a href="https://www.hollidaystore.com/conta/pedido/listar" title="Minha conta">Meus pedidos</a>
+                      </li>
+                    
+                    <li>
+                      <a href="https://www.hollidaystore.com/conta/favorito/listar" title="Minha conta">Meus favoritos</a>
+                    </li>
+                    <li>
+                      <a href="https://www.hollidaystore.com/conta/logout" title="Sair">Sair</a>
+                    </li>
+                  </ul>
+                </div>
+              
+            </div>
+            <div class="span4">
+              <ul class="acoes-conta borda-alpha">
+                
+                  <li>
+                    <i class="icon-list fundo-principal"></i>
+                    <a href="https://www.hollidaystore.com/conta/pedido/listar" class="cor-secundaria">Meus Pedidos</a>
+                  </li>
+                
+                <li>
+                  <i class="icon-user fundo-principal"></i>
+                  <a href="https://www.hollidaystore.com/conta/index" class="cor-secundaria">Minha Conta</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+
+        <div class="inferior row-fluid ">
+          <div class="span8 busca-mobile">
+            <a href="javascript:;" class="atalho-menu visible-phone icon-th botao principal"> </a>
+
+            <div class="busca borda-alpha">
+              <form id="form-buscar" action="/buscar" method="get">
+                <input id="auto-complete" type="text" name="q" placeholder="Digite o que você procura" value="" autocomplete="off" />
+                <button class="botao botao-busca icon-search fundo-secundario"></button>
+              </form>
+            </div>
+
+          </div>
+
+          
+            <div class="span4 hidden-phone">
+              
+<div class="carrinho ">
+  
+    <a href="https://www.hollidaystore.com/carrinho/index">
+      <i class="icon-shopping-cart fundo-principal"></i>
+      <strong class="qtd-carrinho titulo cor-secundaria">1</strong>
+      <span>
+        
+          <b class="titulo cor-secundaria"><span>Meu Carrinho</span></b>
+        
+        <span class="cor-secundaria">Produto adicionado</span>
+      </span>
+      
+        <span class="titulo cor-secundaria vazio-text">Carrinho vazio</span>
+      
+    </a>
+  
+
+  <div class="carrinho-interno-ajax">
+    
+
+  <div class="carrinho-interno borda-principal">
+    <ul>
+      
+      <li>
+        
+          
+            
+
+
+  
+    <div class="preco-produto destaque-parcela com-promocao">
+        
+        
+          
+            
+              <div>
+                <s class="preco-venda ">
+                  R$ 398,00
+                </s>
+                <strong class="preco-promocional cor-principal ">
+                  R$ 378,10
+                </strong>
+              </div>
+            
+          
+        
+      
+    </div>
+  
+
+
+          
+        
+        <a href="https://www.hollidaystore.com/kit-com-10-camisas-manga-curta-basica-bordada-lisa-algodao" class="imagem-produto">
+            <img src="https://cdn.awsli.com.br/64x64/399/399180/produto/34107310a2b076dc72.jpg" alt="Kit 20 Camisas Básica Bordada Lisa Algodão - k1" />
+        </a>
+        <a href="https://www.hollidaystore.com/kit-com-10-camisas-manga-curta-basica-bordada-lisa-algodao" class="nome-produto cor-secundaria">
+          Kit 20 Camisas Básica Bordada Lisa Algodão - k1
+        </a>
+        <div class="produto-sku hide">0000000018555</div>
+      </li>
+      
+    </ul>
+    <div class="carrinho-rodape">
+      <span class="carrinho-info">
+        
+          <i>1 produto no carrinho</i>
+        
+        
+          
+            <span class="carrino-total">
+              Total: <strong class="titulo cor-principal">R$ 756,20</strong>
+            </span>
+          
+        
+      </span>
+      <a href="https://www.hollidaystore.com/carrinho/index" class="botao principal">
+        
+          <i class="icon-shopping-cart"></i>Ir para o carrinho
+        
+      </a>
+    </div>
+  </div>
+
+
+  </div>
+
+</div>
+
+            </div>
+          
+        </div>
+
+      </div>
+    </div>
+    
+
+
+  
+    
+      
+<div class="menu superior">
+  <ul class="nivel-um">
+    
+
+
+    
+
+  
+
+
+    
+      <li class="categoria-id-3022179 com-filho borda-principal">
+        <a href="https://www.hollidaystore.com/homens" title="Homens">
+          <strong class="titulo cor-secundaria">Homens</strong>
+          
+            <i class="icon-chevron-down fundo-secundario"></i>
+          
+        </a>
+        
+          <ul class="nivel-dois borda-alpha">
+            
+
+  <li class="categoria-id-3022183 com-filho">
+    <a href="https://www.hollidaystore.com/roupas-masculinas" title="Roupas Masculinas">
+      
+        <i class="icon-chevron-right fundo-secundario"></i>
+      
+      Roupas Masculinas
+    </a>
+    
+      <ul class="nivel-tres">
+        
+          
+
+  <li class="categoria-id-2951138 com-filho">
+    <a href="https://www.hollidaystore.com/camisas" title="Camisas">
+      
+        <i class="icon-chevron-right fundo-secundario"></i>
+      
+      Camisas
+    </a>
+    
+      <ul class="nivel-tres">
+        
+          
+
+  <li class="categoria-id-2951201 ">
+    <a href="https://www.hollidaystore.com/camisa-manga-curta" title="Camisa Manga Curta">
+      
+      Camisa Manga Curta
+    </a>
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+
+          </ul>
+        
+      </li>
+    
+      <li class="categoria-id-3022235 com-filho borda-principal">
+        <a href="https://www.hollidaystore.com/mulheres" title="Mulheres">
+          <strong class="titulo cor-secundaria">Mulheres</strong>
+          
+            <i class="icon-chevron-down fundo-secundario"></i>
+          
+        </a>
+        
+          <ul class="nivel-dois borda-alpha">
+            
+
+  <li class="categoria-id-3022236 com-filho">
+    <a href="https://www.hollidaystore.com/roupas-femininas" title="Roupas Femininas">
+      
+        <i class="icon-chevron-right fundo-secundario"></i>
+      
+      Roupas Femininas
+    </a>
+    
+      <ul class="nivel-tres">
+        
+          
+
+  <li class="categoria-id-3024339 ">
+    <a href="https://www.hollidaystore.com/blusas" title="Blusas">
+      
+      Blusas
+    </a>
+    
+  </li>
+
+  <li class="categoria-id-3040288 ">
+    <a href="https://www.hollidaystore.com/bodys" title="Bodys">
+      
+      Bodys
+    </a>
+    
+  </li>
+
+  <li class="categoria-id-3024444 ">
+    <a href="https://www.hollidaystore.com/conjuntos" title="Conjuntos">
+      
+      Conjuntos
+    </a>
+    
+  </li>
+
+  <li class="categoria-id-3024897 ">
+    <a href="https://www.hollidaystore.com/categoria/croppeds.html" title="Croppeds">
+      
+      Croppeds
+    </a>
+    
+  </li>
+
+  <li class="categoria-id-3022237 ">
+    <a href="https://www.hollidaystore.com/macacoes" title="Macacões">
+      
+      Macacões
+    </a>
+    
+  </li>
+
+  <li class="categoria-id-3024932 ">
+    <a href="https://www.hollidaystore.com/saias" title="Saias">
+      
+      Saias
+    </a>
+    
+  </li>
+
+  <li class="categoria-id-3040207 ">
+    <a href="https://www.hollidaystore.com/shorts" title="Shorts">
+      
+      Shorts
+    </a>
+    
+  </li>
+
+  <li class="categoria-id-3022608 ">
+    <a href="https://www.hollidaystore.com/vestidos" title="Vestidos">
+      
+      Vestidos
+    </a>
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+
+          </ul>
+        
+      </li>
+    
+  </ul>
+</div>
+
+    
+  
+
+
+  </div>
+  <span id="delimitadorBarra"></span>
+</div>
+
+        
+      
+
+      
+        
+      
+
+      <div id="corpo">
+        <div class="conteiner">
+          
+
+          
+
+          
+            <div class="secao-principal row-fluid sem-coluna">
+              
+
+              
+  
+  
+    <div class="finalizar-compra">
+      <div class="cabecalho-interno row-fluid">
+        <div class="span12">
+          
+            <h1 class="titulo cor-secundaria">
+              Carrinho <small> Clique em finalizar compra para efetuar o seu pedido.</small>
+            </h1>
+          
+        </div>
+      </div>
+      <div class="caixa-sombreada">
+        <table class="table tabela-carrinho border-alpha">
+          <thead>
+            <th colspan="2" width="45%">
+              <h6 class="cor-secundaria">Produto</h6>
+            </th>
+            
+              <th width="15%">
+                <h6 class="cor-secundaria">Preço unitário</h6>
+              </th>
+            
+            <th width="15%">
+              <h6 class="cor-secundaria">Quantidade</h6>
+            </th>
+            
+              <th width="15%">
+                <h6 class="cor-secundaria">Subtotal</h6>
+              </th>
+            
+            <th width="10%">
+              <h6 class="cor-secundaria">Excluir</h6>
+            </th>
+          </thead>
+          
+            <tr data-produto-id="34107310" data-produto-quantidade="2">
+              <td class="sem-borda conteiner-imagem">
+                <div class="imagem">
+                    <a href="https://www.hollidaystore.com/kit-com-10-camisas-manga-curta-basica-bordada-lisa-algodao">
+                    <img src="https://cdn.awsli.com.br/64x64/399/399180/produto/34107310a2b076dc72.jpg" alt="Kit 20 Camisas Básica Bordada Lisa Algodão - k1" /></a>
+                </div>
+              </td>
+              <td class="sem-borda">
+                <div class="produto-info">
+                  <a href="https://www.hollidaystore.com/kit-com-10-camisas-manga-curta-basica-bordada-lisa-algodao" class="cor-secundaria">
+                    Kit 20 Camisas Básica Bordada Lisa Algodão - k1
+                  </a>
+                  
+                  <ul>
+                    <li>
+                      <span>
+                        SKU:
+                        <strong>
+                          0000000018555
+                        </strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Estoque:
+                        <strong>
+                          Disponível
+                        </strong>
+                      </span>
+                    </li>
+                    
+                          
+                        
+                  </ul>
+                </div>
+              </td>
+              
+                <td class="hidden-phone">
+                  
+
+
+  
+    <div class="preco-produto destaque-parcela com-promocao">
+        
+        
+          
+            
+              <div>
+                <s class="preco-venda ">
+                  R$ 398,00
+                </s>
+                <strong class="preco-promocional cor-principal ">
+                  R$ 378,10
+                </strong>
+              </div>
+            
+          
+        
+      
+    </div>
+  
+
+
+                </td>
+              
+              <td class="clearfix">
+                <form action="https://www.hollidaystore.com/carrinho/produto/34107310/atualizar" method="post">
+                  <div class="quantidade">
+                    <a href="https://www.hollidaystore.com/carrinho/produto/34107310/atualizar/1" class="cor-secundaria icon-minus"></a>
+                    <input type="text" class="input-mini" name="quantidade" value="2" autocomplete="off"/>
+                    <a href="https://www.hollidaystore.com/carrinho/produto/34107310/atualizar/3" class="cor-secundaria icon-plus"></a>
+                    <button class="botao principal pequeno atualizar-quantidade">Atualizar quantidade</button>
+                  </div>
+                </form>
+              </td>
+              
+                <td>
+                  <div class="preco-produto">
+                    <strong class="preco-promocional cor-principal titulo">
+                      R$ 756,20
+                    </strong>
+                  </div>
+                </td>
+              
+              <td>
+                <div class="excluir">
+                  <a href="https://www.hollidaystore.com/carrinho/produto/34107310/remover" class="icon-trash cor-secundaria"></a>
+                </div>
+              </td>
+            </tr>
+          
+
+          
+            <tr class="hidden-phone bg-dark">
+              <td colspan="4">&nbsp;</td>
+              
+                <td colspan="2">
+                  <div class="subtotal">
+                    <span>Subtotal: </span>
+                    <strong class="titulo cor-principal" data-subtotal-valor="756.2">
+                      R$ 756,20
+                    </strong>
+                  </div>
+                </td>
+              
+            </tr>
+          
+
+          
+            <tr class="hidden-phone bg-dark">
+              <td colspan="4">
+                <form class="form-horizontal" id="formCalcularFrete">
+                  <div class="control-group">
+                    <label class="control-label" for="calcularFrete">
+                      <b class="cor-secundaria">Calcule o frete:</b>
+                    </label>
+                    <div class="controls text-left">
+                      <div class="input-append">
+                        <input type="tel" name="cep_destino" id="calcularFrete" class="input-small input-cep" value="55190-317">
+                        <button class="btn"><i class="icon-truck"></i>Calcular</button>
+                      </div>
+                      <span class="help-inline">
+                        <a href="https://www.hollidaystore.com/nao_sei_o_cep/" target="_blank"><i class="icon-question-sign"></i>Não sei meu CEP</a>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </td>
+              <td colspan="2">
+                <div class="formas-envio">
+                  <ul>
+                  </ul>
+                  
+                </div>
+              </td>
+            </tr>
+
+            <tr class="bg-dark">
+              
+                
+                  <td colspan="4">
+                    <form class="form-horizontal" action="https://www.hollidaystore.com/carrinho/cupom/validar" method="post">
+                      <div class="control-group">
+                        <label class="control-label" for="usarCupom"><b class="cor-secundaria">Cupom de desconto:</b></label>
+                        <div class="controls text-left">
+                          <div class="input-append">
+                            <input type="text" name="cupom" id="usarCupom" class="input-small">
+                            <button class="btn">Usar cupom</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </td>
+                <td colspan="2"></td>
+                
+              
+            </tr>
+          
+
+          
+            <tr class="bg-dark">
+              <td colspan="6" class="line-18">
+                <div class="total">
+                  <span>Total:</span>
+                  <strong class="titulo cor-principal valor-total" data-total-valor="756,20">
+                    R$ 756,20
+                  </strong>
+                </div>
+                <div class="valores-descontos">
+                  
+
+  
+    
+    
+      
+        
+          <div class="descontos avista">
+            <span>
+              
+                via Boleto Bancário
+              
+              por <strong class="cor-principal titulo font-15">R$ 718,39</strong> com <strong>5% de desconto</strong>
+            </span>
+          </div>
+        
+      
+    
+  
+
+
+  
+    
+      <div class="descontos parcelas">
+        <span>
+          ou em até <strong>12x</strong> de <strong>R$ 75,92</strong>
+        </span>
+      </div>
+    
+  
+
+
+                </div>
+              </td>
+            </tr>
+          
+        </table>
+      </div>
+
+      <form action="https://www.hollidaystore.com/checkout/redirect/" method="post">
+        <div class="acao-editar row-fluid">
+          <div class="span12">
+            
+              <a href="https://www.hollidaystore.com/" class="botao">Continuar comprando</a>
+            
+            
+              
+                <button class="botao principal grande"><i class="icon-ok"></i>Finalizar compra</button>
+              
+            
+          </div>
+          
+           <div class="selo-ssl hidden-phone">
+             <img src="https://cdn.awsli.com.br/production/static/img/struct/stamp_encryptssl_cart.png" alt="Compra 100% Segura" />
+           </div>
+          
+        </div>
+      </form>
+    </div>
+  
+
+  
+
+
+
+              
+            </div>
+          
+
+          <div class="secao-secundaria">
+            
+            
+          </div>
+        </div>
+      </div>
+
+      
+  
+<div id="rodape">
+    
+  <div style="background-color: #fff; border-top: 1px solid #ddd; position: relative; z-index: 10; font-size: 11px; display: block !important;">
+    <div class="conteiner">
+      <div class="row-fluid">
+        <div class="span9 span12" style="text-align: center; min-height: 20px; width: 100%;">
+          <p style="margin-bottom: 0;">
+            
+              Industria de Roupas Holliday LTDA - CNPJ: 31.247.584/0001-28
+            
+            
+            &copy; Todos os direitos reservados. 2019
+          </p>
+        </div>
+        
+        <div style="min-height: 30px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float: left; opacity: 1 !important; display: block !important; visibility: visible !important; height: 40px !important; width: 100% !important; margin: 0 !important; position: static !important;">
+          <a href="https://www.lojaintegrada.com.br?utm_source=lojas&utm_medium=rodape&utm_campaign=hollidaystore.com" title="Loja Integrada - Plataforma de loja virtual." target="_blank" style="opacity: 1 !important; display: inline-block !important; visibility: visible !important; margin: 0 !important; position: static !important; overflow: visible !important;">
+            <img src="https://cdn.awsli.com.br/production/static/whitelabel/lojaintegrada/img/logo-rodape-loja-pro.png?v=42d9a85" alt="Logomarca Loja Integrada" style="opacity: 1 !important; display: inline !important; visibility: visible !important; margin: 0 !important; position: static !important; max-width: 1000px !important; max-height: 1000px !important; width: auto !important; height: auto !important;" />
+          </a>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  
+    
+  
+
+    </div>
+
+    
+      
+<div id="barraTopo" class="hidden-phone">
+  <div class="conteiner">
+    <div class="row-fluid">
+      <div class="span3 hidden-phone">
+        <h4 class="titulo">
+          <a href="https://www.hollidaystore.com/" title="Holliday Store" class="cor-secundaria">Holliday Store</a>
+        </h4>
+      </div>
+      <div class="span3 hidden-phone">
+        <div class="canais-contato">
+          <ul>
+            <li><a href="#modalContato" data-toggle="modal" data-target="#modalContato">
+              <i class="icon-comment"></i>Fale Conosco</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="span6">
+        <div class="row-fluid">
+          <div class="busca borda-alpha span6">
+            <form action="/buscar" method="get">
+              <input type="text" name="q" placeholder="Digite o que você procura" />
+              <button class="botao botao-busca botao-input icon-search fundo-secundario"></button>
+            </form>
+          </div>
+          
+            <div class="span6 hidden-phone">
+              
+<div class="carrinho ">
+  
+    <a href="https://www.hollidaystore.com/carrinho/index">
+      <i class="icon-shopping-cart fundo-principal"></i>
+      <strong class="qtd-carrinho titulo cor-secundaria">1</strong>
+      <span>
+        
+          <b class="titulo cor-secundaria"><span>Produto no carrinho</span></b>
+        
+      </span>
+      
+        <span class="titulo cor-secundaria vazio-text">Carrinho vazio</span>
+      
+    </a>
+  
+
+  <div class="carrinho-interno-ajax">
+    
+
+  <div class="carrinho-interno borda-principal">
+    <ul>
+      
+      <li>
+        
+          
+            
+
+
+  
+    <div class="preco-produto destaque-parcela com-promocao">
+        
+        
+          
+            
+              <div>
+                <s class="preco-venda ">
+                  R$ 398,00
+                </s>
+                <strong class="preco-promocional cor-principal ">
+                  R$ 378,10
+                </strong>
+              </div>
+            
+          
+        
+      
+    </div>
+  
+
+
+          
+        
+        <a href="https://www.hollidaystore.com/kit-com-10-camisas-manga-curta-basica-bordada-lisa-algodao" class="imagem-produto">
+            <img src="https://cdn.awsli.com.br/64x64/399/399180/produto/34107310a2b076dc72.jpg" alt="Kit 20 Camisas Básica Bordada Lisa Algodão - k1" />
+        </a>
+        <a href="https://www.hollidaystore.com/kit-com-10-camisas-manga-curta-basica-bordada-lisa-algodao" class="nome-produto cor-secundaria">
+          Kit 20 Camisas Básica Bordada Lisa Algodão - k1
+        </a>
+        <div class="produto-sku hide">0000000018555</div>
+      </li>
+      
+    </ul>
+    <div class="carrinho-rodape">
+      <span class="carrinho-info">
+        
+          <i>1 produto no carrinho</i>
+        
+        
+          
+            <span class="carrino-total">
+              Total: <strong class="titulo cor-principal">R$ 756,20</strong>
+            </span>
+          
+        
+      </span>
+      <a href="https://www.hollidaystore.com/carrinho/index" class="botao principal">
+        
+          <i class="icon-shopping-cart"></i>Ir para o carrinho
+        
+      </a>
+    </div>
+  </div>
+
+
+  </div>
+
+</div>
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    <!--googleoff: all-->
+
+    <div id="modalWindow" class="modal hide">
+      <div class="modal-body">
+        <div class="modal-body">
+          Carregando conteúdo, aguarde...
+        </div>
+      </div>
+    </div>
+
+    <div id="modalAlerta" class="modal hide">
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <a href="" data-dismiss="modal" class="botao principal" rel="nofollow">Fechar</a>
+      </div>
+    </div>
+
+    <div id="modalContato" class="modal hide" tabindex="-1" aria-labelledby="modalContatoLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
+        <span class="titulo cor-secundaria">Fale Conosco</span>
+        Preencha o formulário abaixo.
+      </div>
+      <form action="/contato/popup/" method="post" class="form-horizontal">
+        <div class="modal-body borda-principal">
+          <div class="contato-loading">
+            <i class="icon-spin icon-refresh"></i>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    
+      
+    
+
+    
+      <div id="AdicionarFavoritoSucessoModal" class="modal hide">
+        <div class="modal-header">
+          <span>Favorito adicionado</span>
+        </div>
+        <div class="modal-body">
+          O produto foi adicionado com sucesso à sua <strong>Lista de Desejos</strong>.
+        </div>
+        <div class="modal-footer">
+          <a class="botao" data-dismiss="modal" aria-hidden="true">Fechar</a>
+          <a class="botao principal" href="https://www.hollidaystore.com/conta/favorito/listar">Visualizar Lista de Desejos</a>
+        </div>
+      </div>
+
+      <div id="AdicionarFavoritoErroModal" class="modal hide">
+        <div class="modal-header">
+          <span class="titulo cor-secundaria">Erro ao adicionar favorito</span>
+        </div>
+        <div class="modal-body">
+          <p>
+            O produto não foi adicionado com sucesso ao seus favoritos, por favor tente mais tarde.
+            para visualizar a lista de favoritos clique <a href="https://www.hollidaystore.com/conta/favorito/listar">aqui</a>.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a class="botao" data-dismiss="modal" aria-hidden="true">Fechar</a>
+          <a class='botao principal' style="display: none;" id="AdicionarFavoritoLogin">Logar</a>
+        </div>
+      </div>
+    
+
+    
+
+    
+
+<div id="avise-me-cadastro" style="display: none;">
+  
+
+  <div class="avise-me">
+    
+    <form action="" method="POST" class="avise-me-form">
+      <span class="avise-tit">
+        Ops!
+      </span>
+      <span class="avise-descr">
+        Esse produto encontra-se indisponível.<br />
+        Deixe seu e-mail que avisaremos quando chegar.
+      </span>
+      <div class="avise-input">
+        <div class="controls controls-row">
+          <input class="span5 avise-nome" name="avise-nome" type="text" placeholder="Digite seu nome" />
+          <label class="span7">
+            <i class="icon-envelope avise-icon"></i>
+            <input class="span12 avise-email" name="avise-email" type="email" placeholder="Digite seu e-mail" />
+          </label>
+        </div>
+      </div>
+      <div class="avise-btn">
+        <input type="submit" value="Avise-me quando disponível" class="botao fundo-secundario btn-block" />
+      </div>
+    </form>
+  </div>
+
+
+</div>
+
+<div id="avise-me-sucesso" style="display: none;">
+  <span class="avise-suc-tit cor-principal">
+    Obrigado!
+  </span>
+  <span class="avise-suc-descr">
+    Você receberá um e-mail de notificação, assim que esse produto estiver disponível em estoque
+  </span>
+</div>
+
+
+    
+
+    <!--googleon: all-->
+
+    
+
+    
+      
+        
+          
+            <script type='text/javascript'> var smarthintkey = 'SH-183599'; (function() { var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;script.src = 'https://service.smarthint.co/Scripts/i/lojaIntegrada.min.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);})();</script>
+          
+        
+          
+            <div class="script-enviou hide"><!-- <script> var CLIENT_TOKEN='11012017032526ZTT'; </script> <script src='https://ca.enviou.com.br/js/ca-li.js'> </script> --></div>
+          
+        
+          
+            <script>
+  dataLayer = [{
+    'pageTitle': document.title,
+    'pageUrl': window.location.href,
+    'email': 'linkcreative.dev@gmail.com',
+    
+    
+    
+    
+      
+        'PageType': 'BasketPage',
+        'ProductBasketProducts': [
+          
+          {
+            'name': 'Kit 20 Camisas Básica Bordada Lisa Algodão - k1',
+            'id': '0000000018555',
+            'price': '378.1',
+            'quantity': 2
+          }
+          
+        ]
+      
+    
+    
+  }];
+  
+    
+      dataLayer.push({
+        'event': 'checkout',
+        'ecommerce': {
+          'checkout': {
+            
+              'actionField': {'step': 1, 'option': 'Cart'},
+            
+            'products': [
+              
+              {
+                'name': 'Kit 20 Camisas Básica Bordada Lisa Algodão - k1',
+                'id': '0000000018555',
+                'price': '378.1',
+                'quantity': 2
+              }
+              
+            ]
+          }
+        }
+      });
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K8P36NB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K8P36NB');</script>
+<!-- End Google Tag Manager -->
+          
+        
+          
+            <script type="text/javascript">
+  var google_tag_params = {
+    
+    
+    
+    
+      
+        ecomm_pagetype: 'cart',
+        ecomm_prodid: ['0000000018555'],
+        ecomm_totalvalue: 756.20,
+        dynx_pagetype: 'conversionintent',
+        dynx_totalvalue: 756.20,
+        dynx_itemid: ['0000000018555']
+      
+    
+    
+  };
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 906101352;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/906101352/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+          
+        
+          
+            
+<ul id="selo-customer_reviews" style="display: none;">
+  <li>
+    <g:ratingbadge merchant_id=114600071></g:ratingbadge>​
+  </li>
+</ul>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript">
+  window.___gcfg = {
+    lang: 'pt_BR'
+  };
+  (function() {
+    if($('#rodape .selos').length) {
+      if($('#rodape .selos').hasClass('hide')) {
+        $('#rodape .selos').removeClass('hide');
+        $('#rodape .span9.pagamento').removeClass('span9').addClass('span4');
+      };
+      if($('#selo-customer_reviews li > *').length) {
+        $('#rodape .selos ul').append($('#selo-customer_reviews li'));
+      };
+    }
+  })();
+</script>
+
+          
+        
+      
+
+      
+
+      
+	<!-- quantidade-minima-css -->
+  
+    <style type="text/css">
+      .new-tooltip {
+
+    margin-top: -45px;
+    text-align: center;
+    position: absolute;
+    background: #222222;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: normal;
+    line-height: 15px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 0.6rem;
+    width: 190px;
+    border: 1px solid;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    
+}
+
+.novo-botao-wrapper:hover .new-tooltip {
+    opacity: 1 !important;
+}
+.novo-botao-compra {
+    cursor: pointer !important;
+}
+.novo-botao-compra::before {
+    content: "\f00c";
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none;
+    font-family: FontAwesome;
+}
+
+.novo-botao-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.novo-botao-compra{
+    background: #55af59;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 18px;
+    border-radius: 0;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}
+    </style>
+  
+
+	<!-- qtd-minima-js-andre -->
+  
+  
+
+	<!-- carrinho-mudanças-andre -->
+  
+    <style type="text/css">
+      .tabela-carrinho .quantidade input[type=text],
+.tabela-carrinho #formCalcularFrete #calcularFrete,
+.tabela-carrinho #formCalcularFrete button {
+    border-radius: 0 !important;
+}
+
+.tabela-carrinho .preco-produto .titulo {
+    font-weight: bold;
+    color: #262626;
+    font-size: 12px !important;
+}
+
+table.tabela-carrinho tbody tr:nth-last-child(2) .controls button{
+    /* margin-left: 183px !important; */
+    margin: 0 10px;
+    margin-left: 10px;
+    background: #222222;
+    color: #fff;
+    border: none;
+    border-radius: 0 !important;
+}
+
+table.tabela-carrinho tbody tr {
+    background-color: rgba(0,0,0,0.04);
+}
+table.tabela-carrinho tbody tr:nth-last-child(4),
+table.tabela-carrinho tbody tr:nth-last-child(3),
+table.tabela-carrinho tbody tr:nth-last-child(2) {
+    border-bottom: 1px solid #999999;
+}
+
+
+#usarCupom {
+    width: 44%;
+}
+
+#formCalcularFrete .btn {
+    padding: 4px 25px;
+        background: #222222 !important;
+    color: #fff !important;
+}
+
+#calcularFrete {
+    width: 45% !important;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .finalizar-compra form .span12 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .finalizar-compra form .span12 a:nth-last-child(2) {
+        font-size: 12px !important;
+        margin: 0 0 10px 0 !important;
+    }
+
+    .finalizar-compra form .span12 a:nth-last-child(1) {
+        font-size: 14px;
+    }
+}
+    </style>
+  
+
+	<!-- checkout-mudanças-andre-js -->
+  
+    <script type="text/javascript" charset="utf-8">
+      setTimeout(() => {
+    let parentTable = document.querySelector('.tabela-carrinho.border-alpha')
+
+    let parentTbody = parentTable.getElementsByTagName('tbody')[0]
+    let parentTr = parentTbody.getElementsByTagName('tr')[parentTbody.getElementsByTagName('tr').length - 3]
+    let childToBeChanged = parentTr.getElementsByTagName('td')[0]
+    childToBeChanged.colSpan = '2'
+
+
+    let fixTd = document.createElement('td')
+    fixTd.colSpan = '2'
+    parentTr.appendChild(fixTd)
+    console.log(childToBeChanged)
+
+
+}, 100)
+    </script>
+  
+
+	<!-- fix-carrinho-spc-andre -->
+  
+    <style type="text/css">
+      @media only screen and (max-width: 425px) and (max-height: 480px) {
+    .smarthint #listagemProdutos {
+           height: 90vh !important;
+    }
+    
+}
+
+
+@media only screen and (max-height: 640px) and (max-width: 425px) and (min-height: 569px) {
+    .smarthint #listagemProdutos {
+        height: 70vh !important;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) and (min-height: 569px) and (max-height: 640px) {
+    .smarthint #listagemProdutos {
+        height: 70vh !important;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) and (min-height: 641px) and (max-height: 667px) {
+    .smarthint #listagemProdutos {
+        height: 70vh !important;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) and (min-height: 668px) and (max-height: 736px) {
+    .smarthint #listagemProdutos {
+        height: 70vh !important;
+    }
+    
+}
+    </style>
+  
+
+	<!-- push-css-andre -->
+  
+    <style type="text/css">
+      /*default styles*/
+#push-container{
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    bottom:0;
+    left: 90px;
+
+}
+#push-fix{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items:baseline
+}
+
+#text-one{
+    
+}
+
+#text-two{
+    
+}
+
+#text-three{
+    
+}
+#text-four{
+    
+}
+
+#icon-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#push{
+    display: flex;
+    align-items: center;
+}
+
+#push div{
+    margin: 0 3px 0 3px;
+    height: auto;
+}
+#icon{
+    margin:0 10px 0 5px ;
+}
+
+
+
+.push-open {
+    opacity: 1;
+    white-space: nowrap;
+    transition: width 1s ease, opacity 1s ease-out;
+    font-size: 1.1rem;
+}
+
+.push-close{
+    opacity: 0;
+    white-space: nowrap;
+    transition: width 1s ease, opacity 1s ease-out;
+    font-size: 1rem;
+}
+
+
+.close-push {
+    background-color: rgb(16, 108, 0);
+    width: 0vw;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    font-family: Raleway, Arial, sans-serif;
+    transition: width 1s ease, opacity 1s ease-out;
+    opacity: 0;
+
+}
+
+.close-push-color {
+    background-color: rgb(255, 0, 0 );
+    width: 0vw;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    font-family: Raleway, Arial, sans-serif;
+    transition: width 1s ease, opacity 1s ease-out;
+    opacity: 0;
+
+}
+.open-push{
+    background-color: rgb(16,108,0);
+    width: 35vw;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    font-family: Raleway, Arial, sans-serif;
+    transition: width 1s ease;
+}
+
+.open-push-color {
+    background-color: rgb(255,0,0);
+    width: 35vw;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    font-family: Raleway, Arial, sans-serif;
+    transition: width 1s ease;
+}
+
+#push-progress {
+    -webkit-appearance: none;
+    border: none;
+    position: fixed;
+    bottom: 0;
+    left: 90px;
+    height: 3px;
+    width: 37vw;
+}
+#push-progress::-webkit-progress-value {background: white; }
+#push-progress::-webkit-progress-bar {background-color: rgba(0,0,0,0);}
+
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    #push-container{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 0;
+        left: 90px;
+        max-width: 94.5%;
+    }
+    
+    #push-fix{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items:baseline
+}
+    
+    #icon-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #push{
+        display: flex;
+        align-items: center;
+    }
+
+    #push div{
+        margin: 0 3px 0 3px;
+        height: auto;
+    }
+    #icon{
+        margin:0 10px 0 0 ;
+    }
+
+
+
+    .push-open {
+        opacity: 1;
+        white-space: nowrap;
+        transition: width 1s ease, opacity 1s ease-out;
+        font-size: 1rem;
+    }
+
+    .push-close{
+        opacity: 0;
+        white-space: nowrap;
+        transition: width 1s ease, opacity 0.5s ease-out;
+        font-size: 1rem;
+    }
+
+
+    .close-push {
+        background-color: rgb(16,108,0);
+        width: 0vw;
+        height: 5vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease, opacity 1s ease-out;
+        opacity: 0;
+    }
+    
+    .close-push-color {
+        background-color: rgb(255, 0, 0 );
+        width: 0vw;
+        height: 5vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease, opacity 1s ease-out;
+        opacity: 0;
+    }
+    
+    .open-push{
+        background-color: rgb(16,108,0 );
+        width: 100vw !important;
+        height: 5vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease;
+    }
+    
+     .open-push-color{
+        background-color: rgb(255,0,0 );
+        width: 100vw !important;
+        height: 5vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease;
+    }
+    
+    #push-progress {
+        -webkit-appearance: none;
+        border: none;
+        position: fixed;
+        bottom: 0;
+        left: 90px;
+        height: 3px;
+        width: 100%;
+    }
+    #push-progress::-webkit-progress-value {background: white; }
+    #push-progress::-webkit-progress-bar {background-color: rgba(0,0,0,0);}
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #push-container{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 0;
+        max-width: 94.5%;
+    }
+    
+    #push-fix{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:baseline
+}
+    
+    #icon-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #push{
+        display: flex;
+        align-items: center;
+    }
+
+    #push div{
+        margin: 0 3px 0 3px;
+        height: auto;
+    }
+    #icon{
+        margin:0 10px 0 0 ;
+    }
+
+
+
+    .push-open {
+        opacity: 1;
+        white-space: nowrap;
+        transition: width 1s ease, opacity 1s ease-out;
+        font-size: 1rem;
+    }
+
+    .push-close{
+        opacity: 0;
+        white-space: nowrap;
+        transition: width 1s ease, opacity 0.5s ease-out;
+        font-size: 1rem;
+    }
+
+
+    .close-push {
+        background-color: rgb(16,108,0 );
+        width: 0vw;
+        height: 5vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease, opacity 1s ease-out;
+        opacity: 0;
+    }
+    
+     .close-push-color {
+        background-color: rgb(255,0,0 );
+        width: 0vw;
+        height: 5vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease, opacity 1s ease-out;
+        opacity: 0;
+    }
+    
+    .open-push{
+        background-color: rgb(16,108,0 );
+        width: 100vw;
+        height: 5vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease;
+    }
+    
+    .open-push-color {
+        background-color: rgb(255,0, 0 );
+        width: 100vw;
+        height: 5vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease;
+    }
+    
+    #push-progress {
+        -webkit-appearance: none;
+        border: none;
+        position: fixed;
+        bottom: 0;
+        left: 90px;
+        height: 3px;
+        width: 100%;
+    }
+    #push-progress::-webkit-progress-value {background: white; }
+    #push-progress::-webkit-progress-bar {background-color: rgba(0,0,0,0);}
+
+}
+
+
+
+/*small smartphones*/
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #push-container{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 60px;
+        left: 0;
+        max-width: 94.5%;
+    }
+    
+    #push-fix{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:baseline
+    }
+    
+    #icon-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #push {
+        display: flex;
+        align-items: center;
+    }
+
+    #push div {
+        margin: 0 3px 0 3px;
+        height: auto;
+    }
+    
+    #icon {
+        margin:0 10px 0 0 ;
+    }
+
+
+    .push-open {
+        opacity: 1;
+        white-space: nowrap;
+        transition: width 1s ease, opacity 1.7s ease-out;
+        font-size: 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .push-close{
+        opacity: 0;
+        white-space: nowrap;
+        transition: width 1s ease, opacity 0.5s ease-out;
+        font-size: 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .close-push {
+        background-color: rgb(16,108,0 );
+        width: 0vw;
+        height: 7vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease, opacity 0.5s ease-out;
+        opacity: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+    
+    }
+    
+    .close-push-color {
+        background-color: rgb(255, 0, 0 );
+        width: 0vw;
+        height: 7vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease, opacity 0.5s ease-out;
+        opacity: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    
+    .open-push{
+        background-color: rgb(16,108,0 );
+        width: 100vw;
+        height: 7vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .open-push-color {
+        background-color: rgb(255, 0, 0 );
+        width: 100vw;
+        height: 7vh;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-family: Raleway, Arial, sans-serif;
+        transition: width 1s ease;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #push-progress {
+        -webkit-appearance: none;
+        border: none;
+        position: fixed;
+        top: 131px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+    }
+    #push-progress::-webkit-progress-value {background: white; }
+    #push-progress::-webkit-progress-bar {background-color: rgba(0,0,0,0);}
+
+}
+    </style>
+  
+
+	<!-- functions -->
+  
+    <script type="text/javascript" charset="utf-8">
+      function calculateShipping(i,e) {
+    return i=i.replace("R$","").replace(",","."),e-Number(i)}
+
+function formatResult(i) {
+    return"R$ "+i.toFixed(2).replace(".",",").toString()}
+
+function messageResult(i) {
+    return'<span class="free-shipping warning"><svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M119.467,337.067c-28.237,0-51.2,22.963-51.2,51.2c0,28.237,22.963,51.2,51.2,51.2s51.2-22.963,51.2-51.2C170.667,360.03,147.703,337.067,119.467,337.067z M119.467,422.4c-18.825,0-34.133-15.309-34.133-34.133c0-18.825,15.309-34.133,34.133-34.133s34.133,15.309,34.133,34.133C153.6,407.091,138.291,422.4,119.467,422.4z"/></g></g><g><g><path d="M409.6,337.067c-28.237,0-51.2,22.963-51.2,51.2c0,28.237,22.963,51.2,51.2,51.2c28.237,0,51.2-22.963,51.2-51.2C460.8,360.03,437.837,337.067,409.6,337.067z M409.6,422.4c-18.825,0-34.133-15.309-34.133-34.133c0-18.825,15.309-34.133,34.133-34.133c18.825,0,34.133,15.309,34.133,34.133C443.733,407.091,428.425,422.4,409.6,422.4z"/></g></g><g><g><path d="M510.643,289.784l-76.8-119.467c-1.57-2.441-4.275-3.917-7.177-3.917H332.8c-4.719,0-8.533,3.823-8.533,8.533v213.333c0,4.719,3.814,8.533,8.533,8.533h34.133v-17.067h-25.6V183.467h80.674l72.926,113.442v82.825h-42.667V396.8h51.2c4.719,0,8.533-3.814,8.533-8.533V294.4C512,292.77,511.531,291.157,510.643,289.784z"/></g></g><g><g><path d="M375.467,277.333V217.6h68.267v-17.067h-76.8c-4.719,0-8.533,3.823-8.533,8.533v76.8c0,4.719,3.814,8.533,8.533,8.533h128v-17.067H375.467z"/></g></g><g><g><path d="M332.8,106.667H8.533C3.823,106.667,0,110.49,0,115.2v273.067c0,4.719,3.823,8.533,8.533,8.533H76.8v-17.067H17.067v-256h307.2v256H162.133V396.8H332.8c4.719,0,8.533-3.814,8.533-8.533V115.2C341.333,110.49,337.519,106.667,332.8,106.667z"/></g></g><g><g><rect x="8.533" y="345.6" width="51.2" height="17.067"/></g></g><g><g><rect x="179.2" y="345.6" width="145.067" height="17.067"/></g></g><g><g><rect x="469.333" y="345.6" width="34.133" height="17.067"/></g></g><g><g><rect x="34.133" y="140.8" width="298.667" height="17.067"/></g></g><g><g><rect x="110.933" y="379.733" width="17.067" height="17.067"/></g></g><g><g><rect x="401.067" y="379.733" width="17.067" height="17.067"/></g></g><g><g><rect x="34.133" y="72.533" width="119.467" height="17.067"/></g></g><g><g><rect y="72.533" width="17.067" height="17.067"/></g></g><g></svg>Olá, faltam apenas <em>'+i+"</em> de compras para você aproveitar o frete grátis!</span>"}
+
+function messageFreeShipping() {
+    return'<span class="free-shipping success"><svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M119.467,337.067c-28.237,0-51.2,22.963-51.2,51.2c0,28.237,22.963,51.2,51.2,51.2s51.2-22.963,51.2-51.2C170.667,360.03,147.703,337.067,119.467,337.067z M119.467,422.4c-18.825,0-34.133-15.309-34.133-34.133c0-18.825,15.309-34.133,34.133-34.133s34.133,15.309,34.133,34.133C153.6,407.091,138.291,422.4,119.467,422.4z"/></g></g><g><g><path d="M409.6,337.067c-28.237,0-51.2,22.963-51.2,51.2c0,28.237,22.963,51.2,51.2,51.2c28.237,0,51.2-22.963,51.2-51.2C460.8,360.03,437.837,337.067,409.6,337.067z M409.6,422.4c-18.825,0-34.133-15.309-34.133-34.133c0-18.825,15.309-34.133,34.133-34.133c18.825,0,34.133,15.309,34.133,34.133C443.733,407.091,428.425,422.4,409.6,422.4z"/></g></g><g><g><path d="M510.643,289.784l-76.8-119.467c-1.57-2.441-4.275-3.917-7.177-3.917H332.8c-4.719,0-8.533,3.823-8.533,8.533v213.333c0,4.719,3.814,8.533,8.533,8.533h34.133v-17.067h-25.6V183.467h80.674l72.926,113.442v82.825h-42.667V396.8h51.2c4.719,0,8.533-3.814,8.533-8.533V294.4C512,292.77,511.531,291.157,510.643,289.784z"/></g></g><g><g><path d="M375.467,277.333V217.6h68.267v-17.067h-76.8c-4.719,0-8.533,3.823-8.533,8.533v76.8c0,4.719,3.814,8.533,8.533,8.533h128v-17.067H375.467z"/></g></g><g><g><path d="M332.8,106.667H8.533C3.823,106.667,0,110.49,0,115.2v273.067c0,4.719,3.823,8.533,8.533,8.533H76.8v-17.067H17.067v-256h307.2v256H162.133V396.8H332.8c4.719,0,8.533-3.814,8.533-8.533V115.2C341.333,110.49,337.519,106.667,332.8,106.667z"/></g></g><g><g><rect x="8.533" y="345.6" width="51.2" height="17.067"/></g></g><g><g><rect x="179.2" y="345.6" width="145.067" height="17.067"/></g></g><g><g><rect x="469.333" y="345.6" width="34.133" height="17.067"/></g></g><g><g><rect x="34.133" y="140.8" width="298.667" height="17.067"/></g></g><g><g><rect x="110.933" y="379.733" width="17.067" height="17.067"/></g></g><g><g><rect x="401.067" y="379.733" width="17.067" height="17.067"/></g></g><g><g><rect x="34.133" y="72.533" width="119.467" height="17.067"/></g></g><g><g><rect y="72.533" width="17.067" height="17.067"/></g></g><g></svg>Sua compra será realizada com frete grátis!</span>'}
+
+function writeMessage(i) {
+    $(i).insertBefore($(".pagina-carrinho .tabela-carrinho"))}
+
+function freeShippingNotice() {
+    if(void 0!==FRETE_GRATIS) {
+        var i=FRETE_GRATIS.precoMinimo,e=calculateShipping($(".pagina-carrinho .subtotal strong").text(),i);writeMessage(e<i&&e>0?messageResult(formatResult(e)): messageFreeShipping())
+    }
+}
+function video() {
+    if (typeof VIDEO !== "undefined") {
+        var id = VIDEO.url.split("v=")[1].toString();
+        var iframe =
+            '<div id="video"><div class="video-container"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/' +
+            id +
+            '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></div>';
+
+        $(iframe).insertAfter($("#corpo .conteiner> .marcas"));
+    }
+}
+
+function measurementTable() {
+    if (void 0 !== TABELA_MEDIDAS) {
+        var i = '<div class="measurement-table"> <button class="trigger-table">GUIA DE MEDIDAS</button> <div class="img-table"><button class="close-table">X</button><img src="' + TABELA_MEDIDAS.src + '" width="100%" height="100%" /> </div> </div>';
+        $(i).insertAfter($(".pagina-produto a.lista-favoritos")), $(document).on("click", ".trigger-table", function() {
+                $(this).addClass("active"), $(".img-table").slideDown("fast")
+            }
+
+        ), $(document).on("click", ".close-table", function() {
+                $(".trigger-table").removeClass("active"), $(".img-table").slideUp("fast")
+            }
+
+        )
+    }
+}
+function whatsAppFixed() {
+    if (typeof WHATSAPP != 'undefined') {
+        var href = WHATSAPP.href;
+        $('body').append('<a href="' + href + '" target="_blank" class="whats-btn-fixed"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">.st0{display:none;fill:#FEFEFE;}.st1{fill:#25D366;}.st2{fill:#FFFFFF;}</style><g id="Layer_1"/><g id="Layer_2"><g><path class="st0" d="M512.4,512.4c-170.7,0-341.3,0-512,0c0-170.7,0-341.3,0-512c170.7,0,341.3,0,512,0    C512.4,171.1,512.4,341.8,512.4,512.4z"/><path class="st1" d="M127.8,388.2c0.7-2.6,1.5-5,2.3-7.3c3.6-10.6,7.1-21.3,10.7-31.9c1.3-3.8,2.7-7.6,3.9-11.5    c0.4-1.1,0.3-1.9-0.4-2.9c-3.7-5.3-7.1-10.8-10.1-16.5c-4.8-9.3-8.6-19-11.3-29.1c-1.9-6.9-3-14-3.8-21.1    c-1.2-9.8-1.2-19.7-0.2-29.6c0.9-9,2.6-17.9,5.3-26.7c2.8-9.1,6.4-17.9,10.9-26.3c3.9-7.4,8.5-14.3,13.6-20.8    c5.2-6.5,10.8-12.6,17.1-18.1c5.6-5,11.6-9.6,17.9-13.7c5.3-3.4,10.9-6.5,16.6-9.1c5.5-2.5,11.1-4.8,16.8-6.6    c8.4-2.6,16.9-4.7,25.7-5.6c6.7-0.7,13.4-1.3,20.2-1.1c6.8,0.2,13.6,0.8,20.3,1.9c12.5,2,24.6,5.7,36.1,11    c14.9,6.8,28.1,16,39.9,27.3c10.3,10,18.8,21.2,25.8,33.8c5.1,9.3,9.1,19.1,12,29.3c4,14.1,5.7,28.5,5.3,43.1    c-0.3,10.7-1.7,21.2-4.5,31.5c-3.4,13-8.5,25.3-15.4,36.8c-7,11.8-15.6,22.3-25.6,31.7c-6.9,6.5-14.4,12.2-22.5,17.1    c-8.7,5.3-18,9.7-27.7,13.1c-8.7,3-17.7,5.1-26.8,6.5c-4.1,0.6-8.2,0.9-12.3,1c-2.1,0-4.1,0.3-6.2,0.3c-11.7,0-23.2-1.2-34.6-4    c-13.2-3.2-25.7-8.2-37.4-15c-2.1-1.2-4.2-2.4-6.2-3.8c-1-0.7-1.9-0.7-3-0.3c-6.5,2.2-13.1,4.3-19.6,6.4    c-10.7,3.4-21.4,6.8-32,10.2C128.4,388.2,128.2,388.2,127.8,388.2z"/><path class="st2" d="M206.4,168.4c2.5,0.1,5,0.1,7.4,0.5c1.9,0.3,3.5,1.2,4.7,2.7c1.3,1.6,2.2,3.3,2.9,5.2    c3.6,9.8,7.3,19.7,11,29.5c0.6,1.7,1.3,3.3,1.8,5c0.6,1.9,0.7,3.7-0.2,5.6c-1.2,2.7-2.6,5.2-4.5,7.4c-2.5,2.8-4.9,5.7-7.6,8.3    c-0.4,0.4-0.8,0.8-1.2,1.2c-1.7,1.9-2.1,3.9-1,6.2c1,1.9,1.9,3.8,3,5.6c4.3,7,8.9,13.7,14.3,19.8c5,5.7,10.5,10.8,16.5,15.4    c4.9,3.8,10.1,7.1,15.6,9.9c3.2,1.7,6.4,3.3,9.7,4.8c2.8,1.3,5.4,1.1,7.7-1.5c4.9-5.4,9.9-10.6,14.3-16.4c0.6-0.9,1.4-1.6,2.2-2.3    c1.4-1.1,2.9-1.5,4.6-1c3.4,0.9,6.5,2.5,9.6,4.1c9,4.7,17.9,9.5,26.9,14.3c0.3,0.2,0.6,0.3,0.9,0.5c3.1,1.5,4.6,3.8,4.3,7.5    c-0.4,4.8-1.6,9.3-3,13.9c-1.2,4-3.5,7.3-6.5,10.1c-2.1,2-4.3,3.7-6.7,5.2c-6.5,4.1-13.5,6.8-21.2,8c-5.4,0.8-10.6,0.3-15.8-1.1    c-8.2-2.4-16.2-5.3-24-8.6c-4-1.7-8-3.4-11.9-5.2c-6.3-2.9-12.2-6.4-17.8-10.4c-7.7-5.4-14.8-11.5-21.4-18.2    c-5-5-9.7-10.4-14.2-15.9c-6.9-8.5-12.7-17.6-18.6-26.8c-5.1-7.9-9.1-16.4-11.6-25.5c-1.6-5.8-2.5-11.7-2.1-17.7    c0.7-11.6,4.4-22,12.4-30.8c2.3-2.5,4.5-4.9,7.2-6.9c2.8-1.9,5.8-2.9,9.2-2.8C204.4,168.4,205.4,168.4,206.4,168.4z"/></g></g></svg></a>');
+    }
+}
+
+function benefitsMobile() {
+    if ("undefined" != typeof TARJA_MOBILE) {
+        var i = TARJA_MOBILE.src,
+            e = i.split("/"),
+            t = '<div class="tarja-mob"><img src="' + i + '" alt="' + e[e.length - 1] + '" title="' + e[e.length - 1] + '"></div>';
+        $(".secao-banners").length && $(".secao-banners").append(t)
+    }
+}
+
+$(function() {
+    benefitsMobile(),
+    //freeShippingNotice(),
+    video(),
+    measurementTable(),
+    whatsAppFixed()}
+    );
+    </script>
+  
+
+	<!-- quantidade-minima-js -->
+  
+    <!-- <script src="https://cdn.awsli.com.br/399/399180/arquivos/min-qtd-bundle.js" type="text/javascript"></script> -->
+  
+
+	<!-- remover-rodape-js -->
+  
+    <script type="text/javascript" charset="utf-8">
+      let rodapeSelect = document.querySelector('#rodape div.conteiner div.row-fluid');
+let selectionToHide = rodapeSelect.getElementsByTagName('div')[1]
+let rodapeWrapper = document.getElementById('rodape')
+
+let createWrapper = document.createElement('div')
+
+createWrapper.style.display = 'none !important'
+createWrapper.style.overflow = 'hidden !important'
+
+createWrapper.appendChild(selectionToHide)
+
+rodapeWrapper.appendChild(createWrapper)
+    </script>
+  
+
+	<!-- sugestao-prod-css-andre -->
+  
+    <style type="text/css">
+      @media only screen and (min-width: 1247px) {
+    #corpo .span6 h1.nome-produto.titulo.cor-secundaria {
+        font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
+    }
+    
+    #corpo .span6 .info-principal-produto .breadcrumbs.borda-alpha ul li  {
+        line-height: 10px;
+    }
+    
+    #corpo .span6 .info-principal-produto .codigo-produto {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+    }
+    #box-codigo-marca{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #box-valor-sugestao {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5px;
+        align-items: center;
+        padding: 10px 25px;
+        box-sizing: border-box;
+        color: white;
+    }
+    
+    .pink {
+        background-color:#ed5979;
+    }
+    .blue {
+        background-color: #57618c;
+    }
+    .increase-font {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+
+@media only screen and (min-width: 942px) and (max-width:1246px) {
+
+    #corpo .span6 h1.nome-produto.titulo.cor-secundaria {
+        font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
+    }
+    
+    #corpo .span6 .info-principal-produto .breadcrumbs.borda-alpha ul li  {
+        line-height: 10px;
+    }
+    
+    #corpo .span6 .info-principal-produto .codigo-produto {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+    }
+    #box-codigo-marca{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #box-valor-sugestao {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5px;
+        align-items: center;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        color: white;
+    }
+    
+    .pink {
+        background-color:#ed5979;
+    }
+    .blue {
+        background-color: #57618c;
+    }
+    .increase-font {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #box-codigo-marca .cor-secundaria span {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:941px) {
+
+    #corpo .span6 h1.nome-produto.titulo.cor-secundaria {
+        font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
+    }
+    
+    #corpo .span6 .info-principal-produto .breadcrumbs.borda-alpha ul li  {
+        line-height: 10px;
+    }
+    
+    #corpo .span6 .info-principal-produto .codigo-produto {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+    }
+    #box-codigo-marca{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #box-codigo-marca b {
+        font-size: 11px !important;
+    }
+
+    #box-codigo-marca .cor-secundaria span {
+        font-size: 10px !important;
+    }
+
+    #box-codigo-marca  .cor-secundaria.pull-right a {
+        font-size: 11px !important;
+    }
+
+    #box-valor-sugestao {
+        display: flex;
+        justify-content: space-between;
+    }
+    .product-value {
+        font-size: 10px;
+    }
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 3px;
+        align-items: center;
+        padding: 10px 2px;
+        box-sizing: border-box;
+        color: white;
+    }
+    
+    .pink {
+        background-color:#ed5979;
+    }
+    .blue {
+        background-color: #57618c;
+    }
+    .increase-font {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+  
+}
+
+
+
+@media only screen and (min-width: 426px) and (max-width:768px) {
+
+    #corpo .span6 h1.nome-produto.titulo.cor-secundaria {
+        font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
+    }
+    
+    #corpo .span6 .info-principal-produto .breadcrumbs.borda-alpha ul li  {
+        line-height: 10px;
+    }
+    
+    #corpo .span6 .info-principal-produto .codigo-produto {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+    }
+    #box-codigo-marca{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #box-valor-sugestao {
+        display: flex;
+        justify-content: space-between;
+        margin: 7px 0;
+    }
+    
+  
+    
+    .pink {
+        background-color:#ed5979;
+    }
+    .blue {
+        background-color: #57618c;
+    }
+    .increase-font {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    
+
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 10px 5vw;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    .produto .codigo-produto {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    .increase-font {
+        font-size: 12px;
+    }
+  
+}
+
+@media only screen and (min-width: 400px) and (max-width: 425px) {
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 10px 7vw;
+        box-sizing: border-box;
+        color: white;
+    }
+
+  
+}
+
+
+@media only screen and (max-width: 425px) {
+    #corpo .span6 h1.nome-produto.titulo.cor-secundaria {
+        font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
+    }
+    
+    #corpo .span6 .info-principal-produto .breadcrumbs.borda-alpha ul li  {
+        line-height: 10px;
+    }
+    
+    #corpo .span6 .info-principal-produto .codigo-produto {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+    }
+    #box-codigo-marca{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #box-valor-sugestao {
+        display: flex;
+        justify-content: space-between;
+        margin: 7px 0;
+    }
+    
+  
+    
+    .pink {
+        background-color:#ed5979;
+    }
+    .blue {
+        background-color: #57618c;
+    }
+    .increase-font {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    
+
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 10px 5vw;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    .produto .codigo-produto {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    .increase-font {
+        font-size: 12px;
+    }
+  
+}
+
+@media only screen and (min-width: 400px) and (max-width: 425px) {
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 10px 7vw;
+        box-sizing: border-box;
+        color: white;
+    }
+
+}
+    </style>
+  
+
+	<!-- pagina-produtos-css-andre -->
+  
+    <style type="text/css">
+      /*botão de cor e tamanho*/
+#corpo .atributo-comum ul li.active a span {
+    color: #fff;
+    background-color: #222222;
+    box-shadow: 0 0;
+    border: none;
+}
+
+#corpo .atributos ul li a:hover {
+    border: 2px solid #222222;
+}
+
+#corpo .atributos ul li.active a:hover {
+  border: 2px solid #222222;
+}
+
+/*formas de pagamento*/
+.parcelas-produto {
+    display: none;
+}
+
+/*botão de compartilhar centralizado*/
+
+.produto-compartilhar {
+    display: flex;
+    justify-content: center;
+}
+
+.produto-compartilhar .sharethis-inline-share-buttons {
+   margin-left: 5vw;
+}
+
+.sharethis-inline-share-buttons:before {
+    content: "Compartilhe";
+    color: #262626;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    margin: 0px 30px;
+    font-family: Montserrat;
+}
+#st-1 {
+    text-align: center !important;
+}
+    </style>
+  
+
+	<!-- fix-livezilla-andre -->
+  
+    <style type="text/css">
+      @media only screen and (max-width: 425px) and (max-height: 480px) {
+     #lz_overlay_wm {
+            margin: 0px 27.3px 85px 0px !important;
+        }
+   
+}
+
+
+@media only screen and (max-width: 425px) and (min-height: 481px) and (max-height: 568px) {
+     #lz_overlay_wm {
+        margin: 0px 27.3px 85px 0px !important;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-height: 569px) and (max-height: 640px) {
+    #lz_overlay_wm {
+        margin: 0px 27.3px 85px 0px !important;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-height: 641px) and (max-height: 667px) {
+     #lz_overlay_wm {
+        margin: 0px 27.3px 85px 0px !important;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-height: 668px) and (max-height: 736px) {
+    #lz_overlay_wm {
+        margin: 0px 27.3px 85px 0px !important;
+    }
+}
+    </style>
+  
+
+	<!-- ajuste-padding-chekout-andre -->
+  
+    <style type="text/css">
+      .smarthint #listagemProdutos .produtos-carrossel .listagem-item .acoes-produto a {
+    padding: 0 !important;
+}
+    </style>
+  
+
+	<!-- listagem-de-home-css-andre -->
+  
+    <style type="text/css">
+      /* listagem de produtos na pagina home */
+
+/* pc tablets e notebooks */
+@media only screen and (min-width: 992px) {
+  .listagem-item .adic-favo {
+        padding: 3px;
+    }
+    
+    .listagem-item .imagem-produto {
+        height: 274px !important;
+    }
+
+    .listagem-item .info-produto, .listagem.aproveite-tambem .listagem-item .info-produto {
+        min-height: 158px !important;
+    }
+    
+}
+
+/* smartphones */
+
+/* tamanho do div que contem as imagens na pagina home */
+
+
+@media only screen and (max-height: 480px) {
+    .listagem-item .imagem-produto {
+        height: 129px !important;
+    }
+    .listagem .info-produto {
+        padding: 6px 0 !important;
+        min-height: 180px !important;
+    }
+    #listagemProdutos .span3{
+        padding: 0 !important;
+    }
+    .smarthint #listagemProdutos {
+        height: 80vh;
+    }
+   
+}
+
+
+@media only screen and (max-width: 425px) and (min-height: 481px) and (max-height: 568px) {
+  
+   .listagem-item .imagem-produto {
+        height: 138px !important;
+    }
+     
+    .listagem-item .info-produto, .listagem.aproveite-tambem .listagem-item .info-produto {
+        min-height: 183px !important;
+    }
+    .listagem .info-produto {
+        padding: 6px 0 !important;
+    }
+    #listagemProdutos .span3{
+        padding: 0 !important;
+    }
+     
+    .smarthint #listagemProdutos {
+        height: 71vh;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-height: 569px) and (max-height: 640px) {
+    .listagem-item .imagem-produto {
+        height: 158px !important;
+    }
+    .listagem .info-produto {
+        padding: 6px 0 !important;
+        min-height: 180px !important;
+    }
+    #listagemProdutos .span3{
+        padding: 0 !important;
+    }
+    .smarthint #listagemProdutos {
+        height: 63vh;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-height: 641px) and (max-height: 667px) {
+    .listagem-item .imagem-produto {
+        height: 166px !important;
+    }
+    .listagem .info-produto {
+        padding: 6px 0 !important;
+        min-height: 180px !important;
+    }
+    #listagemProdutos .span3{
+        padding: 0 !important;
+    }
+    
+    .smarthint #listagemProdutos {
+        height: 63vh;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-height: 668px) and (max-height: 736px) {
+    .listagem-item .imagem-produto {
+        height: 185px !important;
+    }   
+    .listagem .info-produto {
+        padding: 6px 0 !important;
+        min-height: 180px !important;
+    }
+    #listagemProdutos .span3{
+        padding: 0 !important;
+    }
+
+    .listagem-item .info-produto, .listagem.aproveite-tambem .listagem-item .info-produto {
+        min-height: 183px !important;
+    }
+    .smarthint #listagemProdutos {
+        height: 60vh;
+    }
+    
+}
+
+/* listagem de produtos na pagina home */
+
+/*rodape */
+.cr.conteiner {
+    display: none !important;
+}
+    </style>
+  
+
+	<!-- CN - Grade -->
+  
+    <!-- CN Modo Grade -->
+<script>
+var grid = {
+    single: [
+        {
+            name: 'grade-tamanho',
+            title: 'Tamanho',
+        }, {
+            name: 'grade-cor',
+            title: 'Cor',
+        },
+    ],
+    multiple: [
+        {
+            name: ['grade-cor', 'grade-tamanho'],
+            title: ['Cor', 'Tamanho'],
+        },
+    ],
+};
+var enableInPage = ['pagina-produto'];
+(function($){
+    $(function(){
+        if($('body.pagina-produto .preco-restrito').length){
+            enableInPage = [];
+        }
+    })
+})(jQuery);
+var payment = {
+    deposit: {
+        percent: 7,
+        // message: 'Parcelamento de <b class="cor-principal">7%</b> com pagamento via depósito'
+    },
+    installment: {
+        //minInstallment: 35,
+        min: {
+            //amount: 5,
+            //interest: false,
+        },
+        max: {
+            //amount: 10,
+            //interest: true,
+        },
+        // message: 'Parcele suas compras em até <b class="cor-principal">10x</b>.'
+    }
+}
+</script>
+<!--<script src="//lojacn.com.br/tools/purchaseGrid/purchase-grid-tool.js"></script>-->
+<!--<link rel="stylesheet" href="//lojacn.com.br/tools/purchaseGrid/purchase-grid-tool.css">-->
+
+<script src='https://cdn.awsli.com.br/399/399180/arquivos/bundle.cn[hollidaystore].bf23cbb419fb7861040c.js'></script>
+<link rel='stylesheet' href='https://cdn.awsli.com.br/399/399180/arquivos/styles.cn[hollidaystore].bf23cbb419fb7861040c.css' type='text/css' />
+
+<!-- Ajuste produtos que tem duas cores -->
+<script>(function(a){a(function(){if(a('body.pagina-produto').length){var b=a('.purchaseKit-container');b.length&&b.find('.cor .atributo-item').each(function(){var c=a(this),d=c.find('span'),e=d.attr('style');if(e&&2<e.split('#').length){var f=d.attr('style');d.attr('style',f.replace('background','border-color')),b.addClass('with-two-colors')}})}})})(jQuery);</script>
+<style>.pagina-produto.gridMode .purchaseKit-container.with-two-colors .purchaseKit td.cor span,.pagina-produto.gridMode .purchaseKit-container.with-two-colors .selected-items ul li .attr.cor span{border-width:14px;padding:0!important;width:0}</style>
+<!-- END Ajuste produtos que tem duas cores -->
+
+<!-- Ajuste para mostrar a tabela quando tiver somente uma variação de cor -->
+<script>
+    // Não habilitado
+    //$(function(){const a=$('.table-container'),b=$('.atributos .atributo-cor ul li').length;if(1===b){const c=a.find('table');a.find('table').hide();let d=`<tr><th>Tamanho</th><th>Preço</th><th>Qtd</th></tr>`;const e=c.find('tbody tr').eq(1);c.find('tbody tr').eq(0).find('th:not(:first-child)').each(function(g){const i=$(this).html(),j=e.find('td').eq(g+1),k=j.find('.p');d+=k.length?`<tr><td>${i}</td><td class="price" style="text-align: center">${k.html()}</td><td><input data-ref="${j.attr('data-produto-id')}" type="number" class="txt-2" value="0" min="0" style="width: 40px;text-align: center;"></td></tr>`:`<tr><td>${i}</td><td class="price" colspan="2">${j.html()}</td></tr>`});const f=$('<table>',{class:'purchaseKit',html:`<tbody>${d}</tbody>`});f.insertAfter(c),$('.txt-2').on('change',function(){const g=$(this).data('ref');c.find(`td[data-produto-id="${g}"] .txt`).val($(this).val()).change()})}});
+</script>
+
+<!-- Ajuste para mostrar a cor -->
+<script>
+    $(function(){var t=$(".principal .atributos > div:not(.purchaseKit-container)").length,i=!!$(".principal .atributos .atributo-cor").length;1==t&&i&&$(".purchaseKit tbody tr").each(function(){$(this).find("td").first().addClass("cor")})});
+</script>
+<!-- CN Modo Grade -->
+
+<!-- Ajuste na Vitrine Mobile -- Bug do Tema -->
+<style>
+@media screen and (max-width: 480px){
+#listagemProdutos.listagem ul:not(.produtos-carrossel)>li, 
+.pagina-busca .listagem>ul:not(.produtos-carrossel)>li, 
+.pagina-categoria .listagem ul:not(.produtos-carrossel)>li {
+    width: 50%;
+}   
+    }
+</style>
+  
+
+	<!-- Heitor - Livezilla Chat -->
+  
+    <script type="text/javascript" charset="utf-8">
+      <!-- PASS THRU DATA OBJECT -->
+<script type="text/javascript">
+var lz_data = {overwrite:false,language:'pt-br'};
+</script>
+<!-- PASS THRU DATA OBJECT -->
+
+<!-- livezilla.net PLACE SOMEWHERE IN BODY -->
+<script type="text/javascript" id="55d7bfc270b101f7ce074ae6396e54f5" src="https://www.hollidaystore.com.br/chat/script.php?id=55d7bfc270b101f7ce074ae6396e54f5" defer></script>
+<!-- livezilla.net PLACE SOMEWHERE IN BODY -->
+    </script>
+  
+
+    
+
+    
+
+    <script>
+      window.fbAsyncInit = function() {
+        
+          if($('meta[property="fb:app_id"]').length) {
+            FB.init({
+              appId      : $('meta[property="fb:app_id"]').attr('content'),
+              xfbml      : true,
+              version    : 'v2.5'
+            });
+          } else {
+            FB.init({
+              xfbml      : true,
+              version    : 'v2.5'
+            });
+          }
+        
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+<script src="http://localhost/holliday-qtd-minima/qtd-minima.js"></script>
+  </body>
+</html>

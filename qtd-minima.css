@@ -1,0 +1,50 @@
+.new-tooltip {
+
+    margin-top: -45px;
+    text-align: center;
+    position: absolute;
+    background: #222222;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: normal;
+    line-height: 15px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 0.6rem;
+    width: 190px;
+    border: 1px solid;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    
+}
+
+.novo-botao-wrapper:hover .new-tooltip {
+    opacity: 1 !important;
+}
+.novo-botao-compra {
+    cursor: pointer !important;
+}
+.novo-botao-compra::before {
+    content: "\f00c";
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none;
+}
+
+.novo-botao-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.novo-botao-compra{
+    background: #55af59;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 18px;
+    border-radius: 0;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}
